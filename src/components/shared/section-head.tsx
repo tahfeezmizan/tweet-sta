@@ -18,7 +18,7 @@ export default function SectionHead({
       </div>
       <button
         onClick={onButtonClick}
-        className="text-xl font-semibold font-poppins px-12 py-3 rounded-md text-[#ED6923] bg-white border border-[#ED6923]"
+        className="text-xl font-semibold font-poppins px-12 py-3 rounded-md text-[#ED6923] bg-transparent hover:text-white hover:bg-[#ED6923] border border-[#ED6923] transition-all duration-300 cursor-pointer"
       >
         {buttonText}
       </button>

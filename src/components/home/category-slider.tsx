@@ -107,7 +107,10 @@ const category: Category[] = [
 
 export default function CategorySlider() {
   return (
-    <div className="container mx-auto px-4 lg:px-8">
+    <div
+      className="container mx-auto px-4 lg:px-8"
+      
+    >
       <SectionHead
         subheading="Category"
         heading="Popular"
@@ -116,13 +119,13 @@ export default function CategorySlider() {
       />
 
       <div className="relative group mt-6 md:mt-8">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute -left-10 top-1/2 -translate-y-1/2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <button className="category-slider-prev flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white hover:scale-110 transition-all duration-200 -ml-6">
             <ChevronLeft className="w-6 h-6 text-gray-800" />
           </button>
         </div>
 
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute -right-10 top-1/2 -translate-y-1/2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <button className="category-slider-next flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white hover:scale-110 transition-all duration-200 -mr-6">
             <ChevronRight className="w-6 h-6 text-gray-800" />
           </button>
