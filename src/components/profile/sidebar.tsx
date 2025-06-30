@@ -10,13 +10,10 @@ import {
   User,
   X,
 } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
-interface SidebarProps {
-  className?: string;
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => {
+export default function Sidebar({ className = "" }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -36,7 +33,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => {
     <>
       <button
         onClick={toggleMobileMenu}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg "
       >
         {isMobileMenuOpen ? (
           <X className="w-6 h-6 text-gray-700" />
@@ -65,11 +62,13 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => {
         <div className="bg-gradient-to-br from-orange-400 to-orange-500 p-6 text-white h-48">
           <div className="flex flex-col items-center space-y-4 mt-28">
             <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
-                alt="Mark Jecno"
-                className="w-full h-full object-cover rounded-full"
-              />
+              <Link href="/">
+                <img
+                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2"
+                  alt="Mark Jecno"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </Link>
             </div>
 
             <div className="text-center ">
@@ -102,6 +101,4 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => {
       </div>
     </>
   );
-};
-
-export default Sidebar;
+}

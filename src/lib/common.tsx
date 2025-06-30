@@ -47,3 +47,7 @@ export interface PasswordFormData {
   newPassword: string;
   confirmPassword: string;
 }
+
+export interface SidebarProps {
+  className?: string;
+}
