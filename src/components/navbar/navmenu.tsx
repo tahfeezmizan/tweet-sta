@@ -21,7 +21,7 @@ export default function NavMenu() {
 
   return (
     <div className="bg-white border-b border-gray-100 ">
-      <div className="container mx-auto px-4 lg:px-8 h-20 flex items-center justify-between sticky top-0 z-50">
+      <div className="w-auto md:container overflow-hidden mx-auto px-4 lg:px-8 h-20 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-2">
           <Image
             src={logo}

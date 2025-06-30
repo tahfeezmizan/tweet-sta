@@ -107,10 +107,7 @@ const category: Category[] = [
 
 export default function CategorySlider() {
   return (
-    <div
-      className="container mx-auto px-4 lg:px-8"
-      
-    >
+    <div className="container mx-auto px-4 lg:px-8">
       <SectionHead
         subheading="Category"
         heading="Popular"
@@ -182,7 +179,7 @@ export default function CategorySlider() {
               >
                 <div className="h-32 md:h-32 flex flex-col items-center justify-center p-4 pt-0 ">
                   <div
-                    className="w-16 h-16 md:w-32 md:h-36 -mt-10 z-30 bg-center bg-no-repeat  group-hover/card:scale-110 transition-transform duration-300"
+                    className="w-full h-full md:w-32 md:h-36 -mt-10 z-30 bg-center bg-no-repeat  group-hover/card:scale-110 transition-transform duration-300"
                     style={{
                       backgroundImage: `url(${item.image})`,
                     }}

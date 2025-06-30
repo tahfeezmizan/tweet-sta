@@ -1,43 +1,46 @@
 "use client";
 import { Heart, LocateFixed, StarIcon, TruckElectric } from "lucide-react";
-import bannerImg from "../../asstes/banner-img.png";
 import Image from "next/image";
-import { Avatar } from "antd";
+import bannerImg from "../../asstes/banner-img.png";
 import FlavorImg from "../../asstes/flavor-img.png";
+import man1 from "../../asstes/man (1).jpeg";
+import man2 from "../../asstes/man (2).jpg";
+import man3 from "../../asstes/man (3).jpg";
+import increment from "../../asstes/pluse.png";
 
 export default function HeroSection() {
   return (
     <div
       style={{
         backgroundImage: "linear-gradient(135deg, #ffd9c2, #fff4ed)",
-        height: "calc(100vh - 120px)",
+        height: "calc(100vh)",
       }}
-      className="py-20"
+      className="py-14 lg:py-20"
     >
-      <div className="container mx-auto px-4 lg:px-8 flex items-end justify-between gap-5">
+      <div className="w-auto md:container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-end justify-between gap-8 md:gap-12 lg:gap-10">
         <div className="flex-1">
-          <h2 className="text-8xl font-rancho text-[#ED6923] leading-32 ">
+          <h2 className="text-4xl md:text-8xl font-rancho text-[#ED6923] leading-14 md:leading-32 ">
             Hungry?
           </h2>
-          <h2 className="text-7xl font-bold font-poppins leading-24 mb-4 tracking-[-2px]">
+          <h2 className="text-5xl md:text-7xl font-bold font-poppins leading-14 md:leading-24 mb-4 tracking-[-2px]">
             Let Us{" "}
             <span className="text-[#ED6923]">
               Bring <br /> The Feast to You
             </span>
           </h2>
-          <p className="text-lg font-poppins mb-7">
+          <p className="text-lg font-poppins mb-7 md:pr-20 lg:pr-0">
             Explore hundreds of delicious options from top restaurants and Enjoy
             fast, reliable delivery right to you.
           </p>
 
           <div className="flex items-center ">
-            <div className="flex items-center justify-between border border-[#ED6923] py-4 px-4 rounded-l-lg w-96">
+            <div className="flex items-center justify-between border border-[#ED6923] py-4 px-4 rounded-l-lg w-56 md:w-96 ">
               <input
                 type="text"
                 placeholder="Enter your location"
                 className="border-0 outline-none text-base bg-transparent"
               />
-              <span className="flex items-center gap-2 text-sm font-poppins text-[#ED6923]">
+              <span className="hidden md:flex items-center gap-2 text-sm font-poppins text-[#ED6923]">
                 <LocateFixed className="text-black " /> Locate me
               </span>
             </div>
@@ -49,28 +52,41 @@ export default function HeroSection() {
 
         <div className="flex-1">
           <div className="relative">
-            <div className="absolute bg-white p-5 w-56  rounded-2xl">
-              <div className="mb-3 flex items-center">
-                <Avatar
-                  size={50}
-                  className="mr-2"
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
-                />
-                <Avatar
-                  size={50}
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
-                />
-
+            <div className="absolute hidden md:block bg-white p-5 w-56  rounded-2xl">
+              <div className=" flex mb-3">
                 <Image
-                  src={bannerImg}
+                  src={man1}
                   alt="logo"
                   width={50}
                   height={50}
-                  className="w-12 h-12 rounded-full"
+                  className="w-12 h-12 rounded-full "
+                />
+                <Image
+                  src={man2}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                  className="w-12 h-12 -ml-8 z-10 rounded-full border-2 border-white"
+                />
+                <Image
+                  src={man3}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                  className="w-12 h-12 -ml-8 z-10 rounded-full border-2 border-white"
+                />
+                <Image
+                  src={increment}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                  className="w-12 h-12 -ml-8 z-10 rounded-full border-2 border-gray-100 bg-gray-50"
                 />
               </div>
-              <h3>Satisfied Customer</h3>
-              <p className="flex items-center">
+              <h3 className="text-base font-poppins leading-6 pb-1">
+                Satisfied Customer
+              </h3>
+              <p className="flex items-center gap-2">
                 <StarIcon className="text-[#F4C700]" /> 5.0 (3K Reviews)
               </p>
             </div>
@@ -83,7 +99,7 @@ export default function HeroSection() {
               className="w-[600px] h-auto"
             />
 
-            <div className="absolute -bottom-8 left-0 flex items-center justify-between bg-white/60 backdrop-blur-xl p-5 w-80  rounded-2xl">
+            <div className="absolute -bottom-10 lg:-bottom-8 left-0 flex items-center justify-between bg-white/60 backdrop-blur-xl p-5 w-80  rounded-2xl">
               <div className="">
                 <Image
                   src={FlavorImg}
@@ -108,7 +124,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -bottom-3 right-20 w-40 px-6 py-4 flex items-center justify-between gap-4 bg-white/60 backdrop-blur-xl rounded-2xl">
+            <div className="absolute -bottom-3 right-0 lg:right-20  w-40 px-6 py-4 hidden md:flex items-center justify-between gap-4 bg-white/60 backdrop-blur-xl rounded-2xl">
               <div className="bg-[#F5EAE3] p-2 rounded-full flex items-center justify-center">
                 <TruckElectric className="size-8 text-[#ED6923]" />
               </div>

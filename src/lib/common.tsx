@@ -27,3 +27,12 @@ export interface FoodItem {
   deliveryTime: string;
   deliveryFee: string;
 }
+
+export interface TestimonialType {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  rating: number;
+  comment: string;
+}

@@ -6,13 +6,8 @@ import {
   ChevronLeft,
   ChevronRight,
   Clock,
-  DollarSign,
-  Heart,
-  Plus,
   Star,
-  Store,
 } from "lucide-react";
-import React from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,7 +20,7 @@ import SectionHead from "../shared/section-head";
 const popularRestaurent = [
   {
     id: 1,
-    image: "https://i.ibb.co/v6xj48RX/gallery5.jpg",
+    image: "https://i.ibb.co/1YSxP6xz/Popular-Restaurent-1.jpg",
     name: "Burger King",
     delivery_time: "20–30 min",
     discount: "30% Off",
@@ -36,7 +31,7 @@ const popularRestaurent = [
   },
   {
     id: 2,
-    image: "https://i.ibb.co/v6xj48RX/gallery5.jpg",
+    image: "https://i.ibb.co/rf1JBVnj/Popular-Restaurent-2.jpg",
     name: "Vienna's Delight",
     delivery_time: "20–30 min",
     discount: "30% Off",
@@ -47,7 +42,7 @@ const popularRestaurent = [
   },
   {
     id: 3,
-    image: "https://i.ibb.co/v6xj48RX/gallery5.jpg",
+    image: "https://i.ibb.co/JRz3ktJH/Popular-Restaurent-3.jpg",
     name: "AlpenFlair Bistro",
     delivery_time: "20–30 min",
     discount: "30% Off",
@@ -58,7 +53,7 @@ const popularRestaurent = [
   },
   {
     id: 4,
-    image: "https://i.ibb.co/v6xj48RX/gallery5.jpg",
+    image: "https://i.ibb.co/mC9cGy5h/Popular-Restaurent-4.jpg",
     name: "Mozart's Table",
     delivery_time: "20–30 min",
     discount: "30% Off",

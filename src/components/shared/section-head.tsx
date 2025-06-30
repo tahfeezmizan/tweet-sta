@@ -9,16 +9,16 @@ export default function SectionHead({
   onButtonClick,
 }: SectionHeadProps) {
   return (
-    <div className="flex items-end justify-between">
+    <div className="w-auto flex items-end justify-between gap-3">
       <div>
-        <p className="text-xl font-normal font-rancho ">{subheading}</p>
-        <h2 className="text-[40px] font-semibold font-poppins">
+        <p className="text-base md:text-xl font-normal font-rancho ">{subheading}</p>
+        <h2 className="text-2xl md:text-[40px] font-semibold font-poppins">
           {heading} <span className="text-[#ED6923]">{highlight}</span>
         </h2>
       </div>
       <button
         onClick={onButtonClick}
-        className="text-xl font-semibold font-poppins px-12 py-3 rounded-md text-[#ED6923] bg-transparent hover:text-white hover:bg-[#ED6923] border border-[#ED6923] transition-all duration-300 cursor-pointer"
+        className="text-base md:text-xl font-semibold font-poppins px-4 md:px-12 py-1 md:py-3 rounded-md text-[#ED6923] bg-transparent hover:text-white hover:bg-[#ED6923] border border-[#ED6923] transition-all duration-300 cursor-pointer"
       >
         {buttonText}
       </button>
