@@ -12,7 +12,7 @@ export default function NavMenu() {
   const avatarMenuItems: MenuProps["items"] = [
     {
       key: "profile",
-      label: (<Link href="/profile">Profile</Link>),
+      label: <Link href="/profile">Profile</Link>,
       icon: <UserOutlined />,
       onClick: () => {
         console.log("Profile clicked");
@@ -24,13 +24,15 @@ export default function NavMenu() {
     <div className="bg-white border-b border-gray-100 ">
       <div className="w-auto md:container overflow-hidden mx-auto px-4 lg:px-8 h-20 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-2">
-          <Image
-            src={logo}
-            alt="logo"
-            width={50}
-            height={50}
-            className="w-24"
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="logo"
+              width={50}
+              height={50}
+              className="w-24"
+            />
+          </Link>
         </div>
 
         <div className="flex items-center space-x-4">

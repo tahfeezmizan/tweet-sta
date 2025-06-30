@@ -17,7 +17,7 @@ export default function ChangePasswordForm() {
   };
 
   return (
-    <div className="w-8/12 mx-auto">
+    <div className="w-full md:w-8/12 mx-auto">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="bg-white p-7 rounded-lg">
           <h3 className="text-2xl font-medium font-poppins mb-6">

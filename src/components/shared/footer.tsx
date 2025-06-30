@@ -4,6 +4,7 @@ import React from "react";
 import { Facebook, Twitter, Linkedin, MessageCircle, Send } from "lucide-react";
 import Image from "next/image";
 import logo from "../../asstes/logo.png";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -11,18 +12,19 @@ export default function Footer() {
       <div className="w-auto container mx-auto px-4 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="lg:col-span-1">
-            {/* Logo */}
-            <div className="flex items-center space-x-2 mt-6">
-              <Image
-                src={logo}
-                alt="logo"
-                width={50}
-                height={50}
-                className="w-24"
-              />
+            <div className="flex items-center space-x-2 -mt-4  ">
+              <Link href="/">
+                <Image
+                  src={logo}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                  className="w-24"
+                />
+              </Link>
             </div>
 
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-gray-400 mb-6 leading-relaxed mt-10">
               Your go-to choice for fast and fresh delivery, bringing the best
               to your door in no time
             </p>
