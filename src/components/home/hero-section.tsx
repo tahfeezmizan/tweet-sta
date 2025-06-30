@@ -17,7 +17,7 @@ export default function HeroSection() {
       }}
       className="py-14 lg:py-20"
     >
-      <div className="w-auto md:container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-end justify-between gap-8 md:gap-12 lg:gap-10">
+      <div className="w-auto md:container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-10">
         <div className="flex-1">
           <h2 className="text-4xl md:text-8xl font-rancho text-[#ED6923] leading-14 md:leading-32 ">
             Hungry?
@@ -44,7 +44,7 @@ export default function HeroSection() {
                 <LocateFixed className="text-black " /> Locate me
               </span>
             </div>
-            <button className="bg-[#ED6923] text-white text-xl font-semibold p-3.5 px-6 border border-[#ED6923] rounded-r-lg">
+            <button className="bg-[#ED6923] text-white text-base md:text-xl font-semibold py-4 md:p-3.5 px-6 border border-[#ED6923] rounded-r-lg">
               Find Food
             </button>
           </div>

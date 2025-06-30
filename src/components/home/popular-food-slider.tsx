@@ -134,7 +134,7 @@ const popularFoods = [
 
 export default function PopularFoodSlider ()  {
   return (
-    <div className="container mx-auto px-4 lg:px-8">
+    <div className="container mx-auto px-4 lg:px-8 pt-5">
       <SectionHead
         subheading="Popular Food"
         heading="Popular "
@@ -188,7 +188,7 @@ export default function PopularFoodSlider ()  {
         >
           {popularFoods.map((food) => (
             <SwiperSlide key={food.id}>
-              <div className="group/card bg-white rounded-2xl shadow-sm transition-all duration-500 transform  overflow-hidden">
+              <div className="group/card bg-white rounded-2xl shadow-sm transition-all duration-500 transform  overflow-hidden ">
                 <div className="relative h-48 overflow-hidden">
                   <div
                     className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-500 group-hover/card:scale-110"

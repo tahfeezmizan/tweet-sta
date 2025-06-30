@@ -10,7 +10,7 @@ export default function page() {
     <div className="overflow-hidden">
       <HeroSection />
       <div
-        className="space-y-16 pt-40 md:pt-30 "
+        className="space-y-10 md:space-y-16 pt-20 md:pt-30 "
         style={{
           backgroundImage: "linear-gradient(135deg,  #FFD9C226, #fdd4ba66)",
         }}

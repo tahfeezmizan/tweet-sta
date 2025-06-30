@@ -36,3 +36,14 @@ export interface TestimonialType {
   rating: number;
   comment: string;
 }
+
+export interface ProfileFormData {
+  name: string;
+  email: string;
+  address: string;
+}
+export interface PasswordFormData {
+  currentPassword: string;
+  newPassword: string;
+  confirmPassword: string;
+}

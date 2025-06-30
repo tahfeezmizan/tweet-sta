@@ -71,10 +71,10 @@ export default function TestimonialSection() {
     <section className="bg-transparent pb-20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="order-2 lg:order-1">
+          <div className=" lg:order-1">
             <p className="text-xl font-normal font-rancho ">Testimonial</p>
 
-            <h2 className="text-[40px] font-semibold font-poppins mb-6">
+            <h2 className="text-2xl md:text-[40px] font-semibold font-poppins mb-6">
               What <span className="text-[#ED6923]">Customer Saying</span>{" "}
               <br /> About our Services
             </h2>
@@ -106,7 +106,7 @@ export default function TestimonialSection() {
               >
                 {testimonials.map((testimonial) => (
                   <SwiperSlide key={testimonial.id}>
-                    <div className="w-xl mr-auto bg-[#FDF0E9] rounded-2xl p-6 md:p-8 border border-[#FFCABB]">
+                    <div className="md:w-xl mr-auto bg-[#FDF0E9] rounded-2xl p-6 md:p-8 border border-[#FFCABB]">
                       <p className="text-[#262626] text-lg font-poppins leading-relaxed mb-8 font-medium">
                         <span className="text-orange-500 text-4xl font-rancho">
                           "
@@ -153,7 +153,7 @@ export default function TestimonialSection() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 relative">
+          <div className="mx-auto lg:mx-0 lg:order-2 relative">
             <Image
               src={testimonialImg}
               alt="testimonial"

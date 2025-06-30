@@ -6,12 +6,13 @@ import { Avatar, Dropdown } from "antd";
 
 import Image from "next/image";
 import logo from "../../asstes/logo.png";
+import Link from "next/link";
 
 export default function NavMenu() {
   const avatarMenuItems: MenuProps["items"] = [
     {
       key: "profile",
-      label: "Profile",
+      label: (<Link href="/profile">Profile</Link>),
       icon: <UserOutlined />,
       onClick: () => {
         console.log("Profile clicked");
