@@ -53,7 +53,7 @@ export default function Sidebar({ className = "" }) {
         className={`
           fixed left-0 top-0 h-full bg-white shadow-2xl z-40
           transition-transform duration-300 ease-in-out
-          w-80 lg:w-full mx-auto
+          w-80 lg:w-full mx-auto rounded-md overflow-hidden
           ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 lg:relative lg:shadow-none
           ${className}
